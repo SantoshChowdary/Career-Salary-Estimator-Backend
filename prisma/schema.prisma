@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["prismaSchemaFolder"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  mobile    String
+  educationLevel String
+  fieldOfStudy String
+  currentSkills String
+  yearsOfExperience String
+  preferredCareerPath String
+  techComfortLevel String
+  currentRole String?
+  currentCompany String?
+  currentLocation String?
+  currentPackage String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Course{
+  id String @id @default(uuid())
+  name String
+  skill_set String
+  category Category
+}
+
+enum Category{
+  FRONTEND
+  BACKEND
+  AI
+  DATA_SCIENCE
+  DEVELOPMENT
+  DESIGN
+}

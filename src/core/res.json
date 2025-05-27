@@ -1,0 +1,35 @@
+{
+    "message": "User data updated successfully",
+    "jsonResponse": {
+        "estimatedSalary": "₹3–6 LPA",
+        "roles": [
+            "Junior Software Developer",
+            "Frontend Developer",
+            "Backend Developer",
+            "Full Stack Developer",
+            "Python Developer",
+            "Web Developer"
+        ],
+        "missingSkills": [
+            "Advanced Data Structures and Algorithms",
+            "System Design Basics",
+            "Version Control (Git)",
+            "Testing and Debugging",
+            "Cloud Platforms (AWS/Azure/GCP)",
+            "CI/CD Pipelines",
+            "Agile Methodology",
+            "Soft Skills (Communication, Teamwork)"
+        ],
+        "learningTracks": [
+            "Advanced JavaScript and React Frameworks",
+            "Backend Development with Node.js and Python",
+            "Data Structures and Algorithms in Depth",
+            "System Design Fundamentals",
+            "Version Control with Git and GitHub",
+            "Introduction to Cloud Computing and Deployment",
+            "Writing Unit and Integration Tests",
+            "Agile and Scrum Methodologies"
+        ],
+        "roiUpskilling": "Investing time to build expertise in advanced DS&A, system design, cloud technologies, and professional tools like Git will significantly increase employability, enable higher salary offers, and open doors to mid-level software development roles within 1-2 years."
+    }
+}
