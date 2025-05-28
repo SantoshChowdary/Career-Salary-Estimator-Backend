@@ -62,6 +62,7 @@ userRouter.post("/", (async (req, res) => {
         });
     }
 
+
     const jsonResponse = await generatePrompt({
         educationLevel,
         fieldOfStudy,
@@ -75,9 +76,11 @@ userRouter.post("/", (async (req, res) => {
         currentLocation
     });
 
+    // console.log(jsonResponse?.replace(/^```json\n/, '').replace(/\n```$/, ''));
     res.status(201).json({
         message: "User data updated successfully",
-        jsonResponse : JSON.parse(jsonResponse || "{}")
+        // jsonResponse : JSON.parse(jsonResponse || "{}")
+        jsonResponse : JSON.parse(jsonResponse?.replace(/^```json\n/, '').replace(/\n```$/, '') || "{}")
     });
 
 }) as RequestHandler)
