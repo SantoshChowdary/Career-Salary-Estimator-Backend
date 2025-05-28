@@ -1,0 +1,1 @@
+{"root":["../src/index.ts","../src/prisma.ts","../src/core/buildprompt.ts","../src/core/openaiservice.ts","../src/core/router.ts","../src/core/service.ts","../src/core/zod.ts"],"version":"5.8.3"}
